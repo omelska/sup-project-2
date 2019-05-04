@@ -5,24 +5,24 @@ const path = require("path");
 const Sequelize = require("sequelize");
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || "development";
-// const config = require(__dirname + "/../config/config.json")[env];
+const config = require(__dirname + "/../config/config.json")[env];
 const db = {};
 
-const configJson = {
-  development: {
-    username: "root",
-    password: "",
-    database: "restaurant_db",
-    host: "localhost",
-    port: "3306",
-    dialect: "mysql"
-  },
-  production: {
-    use_env_variable: "JAWSDB_URL",
-    dialect: "mysql"
-  }
-};
-const config = configJson[env];
+// const configJson = {
+//   development: {
+//     username: "root",
+//     password: "",
+//     database: "restaurant_db",
+//     host: "localhost",
+//     port: "3306",
+//     dialect: "mysql"
+//   },
+//   production: {
+//     use_env_variable: "JAWSDB_URL",
+//     dialect: "mysql"
+//   }
+// };
+// const config = configJson[env];
 
 let sequelize;
 if (config.use_env_variable) {
