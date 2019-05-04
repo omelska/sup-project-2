@@ -15,7 +15,7 @@ let displayButtons = () => {
         alert("Your session time run out");
       }
       let button = $("<button>");
-      button.attr("class", "btn btn-info menu-item flex-wrap top-margin");
+      button.attr("class", "btn btn-outline-light waves-effect btn-lg menu-item flex-wrap top-margin");
       button.attr("title", element.name);
       button.attr("value", element.id);
       button.text(element.name);
