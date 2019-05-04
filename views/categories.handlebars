@@ -1,4 +1,4 @@
-<div class="categoryContainer">
+{{!-- <div class="categoryContainer">
     <br>
     <br>
     <br>
@@ -28,4 +28,38 @@
     crossorigin="anonymous"></script>
 
 <!--JavaScript-->
-<script src="./js/add-category.js"></script>
+<script src="./js/add-category.js"></script> --}}
+
+<h1>Add Categories</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group category-list">
+          <li class="list-group-item new-item">
+            <form id="category-form">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8">
+                    <input class="new-item form-control" placeholder="Add a category" type="text" />
+                  </div>
+                  <div class="col-4">
+                    <button type="submit" class="btn btn-info" id="submit">Finish</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </li>
+          <div id="category-container">
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!--category.js-->
+  <script src="./js/add-category.js"></script>

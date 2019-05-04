@@ -195,6 +195,7 @@ router.post("/employees", (req, res) => {
 //display all categories
 router.get("/categories", (req, res) => {
   db.Category.findAll().then(results => {
+    console.log(results);
     res.json(results);
   });
 });
@@ -204,6 +205,27 @@ router.post("/categories", (req, res) => {
   db.Category.create({
     name: req.body.name,
     password: req.body.password
+  }).then(results => {
+    res.json(results);
+  });
+});
+
+//update category
+router.put('/categories', (req, res) => {
+  db.Categories.update(
+    {name: req.body.name} ,
+    {where: {id: req.body.id}}
+  ).then(results => {
+    res.json(results);
+  });
+});
+
+//delete a category
+router.delete('/categories', (req, res) => {
+  db.Categories.destroy({
+    where: {
+      id: req.body.id
+    }
   }).then(results => {
     res.json(results);
   });

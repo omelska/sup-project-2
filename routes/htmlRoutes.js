@@ -43,7 +43,7 @@ router.get("/menu/:table", (req, res) => {
 
 router.get("/categories", (req, res) => {
   db.Category.findAll({}).then(results => {
-    res.render("display-categories", { categories: results });
+    res.render("categories", { categories: results });
   });
 });
 
