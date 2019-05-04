@@ -4,15 +4,15 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING
   });
 
-  Waiter.associate = models => {
-    // Each Restaurant has many employees
-    // A new employee can't be created without a Restraunt in order to get access to menus
-    Waiter.belongsTo(models.Restaurant, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
+  // Waiter.associate = models => {
+  //   // Each Restaurant has many employees
+  //   // A new employee can't be created without a Restraunt in order to get access to menus
+  //   Waiter.belongsTo(models.Restaurant, {
+  //     foreignKey: {
+  //       allowNull: false
+  //     }
+  //   });
+  // };
 
   return Waiter;
 };
