@@ -15,7 +15,10 @@ let displayButtons = () => {
         alert("Your session time run out");
       }
       let button = $("<button>");
-      button.attr("class", "btn btn-outline-light waves-effect btn-lg menu-item flex-wrap top-margin");
+      button.attr(
+        "class",
+        "btn btn-outline-light waves-effect btn-lg menu-item flex-wrap top-margin"
+      );
       button.attr("title", element.name);
       button.attr("value", element.id);
       button.text(element.name);
@@ -85,5 +88,13 @@ let addToReport = () => {
     });
   });
 };
+
+let sendOrder = () => {
+  $("#send").on("click", () => {
+    console.log("clicked sent");
+    $("#result").addClass("change-color");
+  });
+};
 displayButtons();
 addToReport();
+sendOrder();

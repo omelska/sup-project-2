@@ -35,7 +35,7 @@ const main = (async = () => {
   app.use("/", htmlRoutes);
   app.use("/api", apiRoutes);
 
-  db.sequelize.sync({ force: true }).then(() => {
+  db.sequelize.sync().then(() => {
     app.listen(PORT, () => {
       console.log(`Server listening on: http://localhost:${PORT}`);
     });

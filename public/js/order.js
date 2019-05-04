@@ -7,6 +7,7 @@ let price = 0,
 
 let displayOrder = () => {
   console.log("displaying order");
+
   let url = "/api/orders/" + tableId;
   console.log("url", url);
   $.get(url).then(res => {
