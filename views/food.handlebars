@@ -1,0 +1,142 @@
+<h2>Add food items</h2>
+
+<form>
+    <label>Enter the name of the dish</label>
+    <div>
+        <input type="text" placeholder="title of the dish" id="name">
+    </div>
+    <label>Select food category</label>
+    <div>
+        <select>
+            <option></option>
+            {{#each category }}
+            <option> {{name}} </option>
+            {{/each}}
+        </select>
+    </div>
+    <label>Enter the wholesale price</label>
+    <div>
+        <input type="text" placeholder="wholesale price" id="wholesalePrice">
+    </div>
+    <label>Enter the retail price</label>
+    <div>
+        <input type="text" placeholder="retail price" id="retailPrice">
+    </div>
+    <label>Enter the stock quantity</label>
+    <div>
+        <input type="text" placeholder="stock quantity" id="stockQty">
+    </div>
+    <p id="allergies">Select allergies</p>
+
+    <div class="flex-wrap">
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="gluten" class="allergy"> Gluten</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="diary" class="allergy"> Diary</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="soy" class="allergy"> Soy</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="eggs" class="allergy"> Eggs</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="peanuts" class="allergy"> Peanuts</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="tree-nuts" class="allergy"> Tree nuts (such as walnuts and
+                cashews)</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="fish" class="allergy"> Fish</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="shellfish" class="allergy"> Shellfish</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="nightshade" class="allergy"> Nightshade (eggplant, tomatoes,
+                and peppers)
+            </p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="allergies">
+            <p><input type="checkbox" name="allergy" value="pork" class="allergy"> Pork</p>
+            Allow modification?
+            <select class="modifications">
+                <option></option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+
+    </div>
+    <a href="/food"><button type="submit" class="btn btn-info" id="add">Save and continue</button></a>
+    <a href="/food-menu"><button type="submit" class="btn btn-info" id="submit">Finish</button></a>
+    <a href="/api/food">FOOD API</a>
+
+</form>
+<div class="container">
+    <div class="row">
+    </div>
+</div>
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+
+<!--JavaScript-->
+<script src="./js/add-food.js"></script>

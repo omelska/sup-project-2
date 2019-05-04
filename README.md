@@ -1,2 +1,2 @@
-# sup-project-2
-POS restaurant system
+# Project-2
+Columbia Coding Bootcamp Project 2

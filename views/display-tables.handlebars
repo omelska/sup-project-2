@@ -1,0 +1,124 @@
+<div id="allTables">
+    <h2>Floor plan</h2>
+    <div class="flex-wrap">
+
+        {{#each tables }}
+
+        <div class="tables" value="{{id}}" id={{id}}>
+            <div>
+                <p class="unclickable">{{tableNumber}}</p>
+            </div>
+        </div>
+
+        {{/each}}
+    </div>
+</div>
+<!--MENU-->
+<div class="hide food-menu" id="menu">
+    <div class="container ">
+        <h1>Menu</h1>
+        <div class="row">
+            <div class="col-lg-6 table-list">
+                <span value="" id="tableID"></span>
+                <!--Generated Ordered Items-->
+                <div id="result" class="left"></div>
+            </div>
+            <!--Generated Menu Items-->
+            <div class="col-lg-6 menu-list" id="resultDiv"></div>
+        </div>
+        <div class="row left">
+            <div class="col-lg-8">
+                <p>Subtotal: $<span id="total"></span></p>
+                <p>Tax: $<span id="tax"></span></p>
+                <h6>Final amount: $<span id="totalAmount"></span></h6>
+            </div>
+            <div class="col-lg-4">
+                <div class="top-margin right">
+                    <button class="btn btn-info" id="send">Send Order</button>
+                </div>
+                <div class="top-margin right">
+                    <a href="/tables">
+                        <button class="btn btn-info" id="pay">Pay</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Modal -->
+{{!-- <div class="modal fade" id="table" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Table</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div>
+                        <lable>Select Guest quantity</lable>
+                        <div class="top-margin">
+                            <button type="button" class="btn btn-info guestQty" value="1">1</button>
+                            <button type="button" class="btn btn-info guestQty" value="2">2</button>
+                            <button type="button" class="btn btn-info guestQty" value="3">3</button>
+                            <button type="button" class="btn btn-info guestQty" value="4">4</button>
+                            <button type="button" class="btn btn-info guestQty" value="5">5</button>
+                            <button type="button" class="btn btn-info guestQty" value="6">6</button>
+                            <button type="button" class="btn btn-info guestQty" value="7">7</button>
+                            <button type="button" class="btn btn-info guestQty" value="8">8</button>
+                            <button type="button" class="btn btn-info guestQty" value="9">9</button>
+                            <button type="button" class="btn btn-info guestQty" value="10">10</button>
+                            <button type="button" class="btn btn-info guestQty" value="11">11</button>
+                            <button type="button" class="btn btn-info guestQty" value="12">12</button>
+                            <button type="button" class="btn btn-info guestQty" value="13">13</button>
+                            <button type="button" class="btn btn-info guestQty" value="14">14</button>
+                            <button type="button" class="btn btn-info guestQty" value="15">15</button>
+                            <button type="button" class="btn btn-info guestQty" value="16">16</button>
+                            <button type="button" class="btn btn-info guestQty" value="17">17</button>
+                            <button type="button" class="btn btn-info guestQty" value="18">18</button>
+                            <button type="button" class="btn btn-info guestQty" value="19">19</button>
+                            <button type="button" class="btn btn-info guestQty" value="20">20</button>
+                            <button type="button" class="btn btn-info guestQty" value="21">21</button>
+                            <button type="button" class="btn btn-info guestQty" value="22">22</button>
+                            <button type="button" class="btn btn-info guestQty" value="23">23</button>
+                            <button type="button" class="btn btn-info guestQty" value="24">24</button>
+                            <button type="button" class="btn btn-info guestQty" value="25">25</button>
+                            <button type="button" class="btn btn-info guestQty" value="26">26</button>
+                            <button type="button" class="btn btn-info guestQty" value="27">27</button>
+                            <button type="button" class="btn btn-info guestQty" value="28">28</button>
+                            <button type="button" class="btn btn-info guestQty" value="29">29</button>
+                            <button type="button" class="btn btn-info guestQty" value="30">30</button>
+                            <button type="button" class="btn btn-info guestQty" value="31">31</button>
+                            <button type="button" class="btn btn-info guestQty" value="32">32</button>
+                            <button type="button" class="btn btn-info guestQty" value="33">33</button>
+                            <button type="button" class="btn btn-info guestQty" value="34">34</button>
+                            <button type="button" class="btn btn-info guestQty" value="35">35</button>
+                        </div>
+
+                    </div>
+                    <div class="top-margin">
+
+                        <input type="text" placeholder="guest notes" id="guest-note">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="/menu"><button type="button" class="btn btn-info" id="openTable">Enter</button></a>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+
+<!-- JavaScript-->
+
+<script src="./js/order.js"></script>
+<script src="./js/display-table.js"></script>

@@ -1,0 +1,40 @@
+<div id="add-new-burger" class="top-margin">
+    <input type="text" placeholder='Enter a burger and click a "Submit" button' id="new-burger">
+
+    <div>
+        <a href="/"><button type="submit" id="submit" class="btn btn-success top-margin">Submit</button></a>
+    </div>
+</div>
+
+<div id="result-div" class="container">
+    <div class="row">
+        <div class="col-sm-5 left">
+            {{#each burger_name }}
+            {{#unless devoured }}
+            <p class="elements top-margin">{{id}}) {{burger_name}} </p>
+            {{/unless}}
+            {{/each}}
+
+        </div>
+        <div class="col-sm-2">
+            {{#each burger_name }}
+            {{#unless devoured }}
+            <div class="top-margin-btn"><a href="/"><button type="button" value="{{id}}"
+                        class="btn btn-warning devour">Devour</button></a>
+            </div>
+            {{/unless}}
+            {{/each}}
+
+        </div>
+        <div class="col-sm-5 left">
+            {{#each burger_name }}
+            {{#if devoured }}
+            <p class="devoured-elements top-margin">{{id}}) {{burger_name}} </p>
+            {{/if}}
+            {{/each}}
+            {{!-- <p class="elements top-margin">{{id}}) {{burger_name}} </p> --}}
+
+        </div>
+    </div>
+
+</div>

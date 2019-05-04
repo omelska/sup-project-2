@@ -1,0 +1,49 @@
+<h1>Add Drinks</h1>
+
+<form action="/action_page.php">
+    <label>
+        <h2>Choose A Category:</h2>
+    </label>
+    <div>
+        <select>
+            <option></option>
+            {{#each Category}}
+            <option> {{name}} </option>
+            {{/each}}
+        </select>
+    </div>
+    <label>
+        <h2>Enter The Name of the drink:</h2>
+    </label>
+    <div>
+        <input type="text" placeholder="Name Of Drink" id="name">
+    </div>
+    <label>
+        <h2>Enter The Whoelsale Price:</h2>
+    </label>
+    <div>
+        <input type="text" placeholder="Wholesale Price" id="wholesalePrice">
+    </div>
+    <label>
+        <h2>Enter The Retail Price:</h2>
+    </label>
+    <div>
+        <input type="text" placeholder="Retail Price" id="retailPrice">
+    </div>
+</form>
+
+</div>
+
+<a href="/drinks"><button type="submit" class="btn btn-info" id="add">Add And Continue</button></a>
+<a href="/drink-menu"><button type="submit" class="btn btn-info" id="submit">Finish</button></a>
+
+<a href="/api/drinks">Drinks API</a>
+
+
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+
+<!--JavaScript-->
+<script src="./js/add-drinks.js"></script>

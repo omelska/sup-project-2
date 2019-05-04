@@ -1,0 +1,49 @@
+<div class="container food-menu">
+    <h1>Food Menu</h1>
+    <div class="row">
+        <div class="col-lg-6 table-list">
+            <p>Table</p>
+            <div id="result" class="left">
+                {{#each orderedItems }}
+
+
+                <p class="ordered-item" value="{{id}}"> {{item}} <span class="left">${{price}}.00</span></p>
+
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="col-lg-6 menu-list" id="resultDiv">
+
+
+
+        </div>
+    </div>
+    <div class="row left">
+        <div class="col-lg-8">
+            <p>
+                Subtotal: $<span id="total"></span>
+            </p>
+            <p>Tax: $<span id="tax"></span></p>
+            <h6>
+                Final amount: $<span id="totalAmount"></span>
+            </h6>
+        </div>
+        <div class="col-lg-4">
+            <div class="top-margin right">
+                <button class="btn btn-info" id="send">Send Order</button>
+            </div>
+            <div class="top-margin right">
+                <button class="btn btn-info" id="pay">Pay</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+
+<!-- JavaScript-->
+<script src="./js/display-table.js"></script>

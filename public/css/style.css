@@ -1,0 +1,112 @@
+body {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.unclickable {
+    cursor: not-allowed;
+}
+
+.allergies {
+    margin: auto;
+}
+
+.food-menu {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.table-list {
+    height: 70vh;
+    overflow: hidden;
+    background: #ece8e8;
+    overflow-y: scroll;
+}
+
+.menu-list {
+    height: 70vh;
+    overflow: hidden;
+    background: #cbf43b;
+}
+
+.right-price {
+    position: absolute;
+    right: 0;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.top-margin {
+    margin-top: 10px;
+}
+
+.tables {
+    background: url("../images/square-table.png");
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    padding-top: 33px;
+    text-decoration: none;
+    color: #000;
+}
+
+.tables:hover {
+    background: url("../images/square-table-hover.png");
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.middle-screen {
+    margin-top: 60px;
+}
+
+.big-btns {
+    font-size: 28px;
+    padding: 20px 0 20px 0;
+    width: 200px;
+}
+
+.bottom-fixed {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#guest-note {
+    width: 100%;
+}
+
+.in-progress {
+    background: #6e7180;
+    border: 1px solid #6e7180;
+}
+
+.in-progress:hover {
+    background: #d4020d;
+    border: 1px solid #d4020d;
+}

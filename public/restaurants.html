@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Restaurant POS</title>
+    <!--Bootstrap link-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--link to Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla|Kirang+Haerang"
+      rel="stylesheet"
+    />
+    <!--CSS link-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Welcomo to Restaurant POS</h1>
+    <div class="top-margin">
+      <p>New to the program or existing user?</p>
+      <button class="btn btn-info" data-toggle="modal" data-target="#logIn">
+        Login
+      </button>
+      <button class="btn btn-info" data-toggle="modal" data-target="#signIn">
+        Sign in
+      </button>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="logIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="loginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title center" id="loginLabel">
+              Log into your account
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body left">
+            <form>
+              <lable>
+                Enter email address
+              </lable>
+              <div>
+                <input type="email" id="userEmail" />
+              </div>
+
+              <lable>Enter the password</lable>
+              <div>
+                <input type="password" id="userPassword" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a id="linkToRestaurant">
+              <button type="submit" class="btn btn-info" id="submit">
+                Sumbit
+              </button>
+            </a>
+
+            <button type="button" class="btn btn-dark" data-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign in Modal -->
+    <div
+      class="modal fade"
+      id="signIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="singInLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title center" id="singInLabel">
+              Create you account with us
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body left">
+            <form>
+              <lable>
+                Enter the title of the restaurant
+              </lable>
+              <div>
+                <input type="text" id="title" />
+              </div>
+
+              <lable>
+                Enter the address
+              </lable>
+              <div>
+                <input type="text" id="address" />
+              </div>
+              <lable>
+                Enter email
+              </lable>
+              <div>
+                <input type="text" id="email" />
+              </div>
+
+              <lable>Enter password</lable>
+              <div>
+                <input type="password" id="passwordSignIn" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-info"
+              id="create"
+              data-toggle="modal"
+              data-target="#created"
+              data-dismiss="modal"
+            >
+              Create account
+            </button>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Created Modal -->
+    <div
+      class="modal fade"
+      id="created"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="createdLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title center" id="createdLabel">
+              Successfully created your account
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-footer">
+            <a href="/">
+              <button type="submit" class="btn btn-info" id="submit">
+                ok
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.js"
+      integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap link-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript-->
+    <script src="./js/add-restaurant.js"></script>
+  </body>
+</html>

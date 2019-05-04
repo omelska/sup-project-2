@@ -1,0 +1,36 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "The restaurant app",
+  "main": "server.js",
+  "scripts": {
+    "watch": "nodemon server.js",
+    "start": "node server.js",
+    "seed_db": "mysql -u root < db/schema.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GCesquire/Project-2.git"
+  },
+  "keywords": [
+    "restauratnt",
+    "POS"
+  ],
+  "author": "Team Back Row",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GCesquire/Project-2/issues"
+  },
+  "homepage": "https://github.com/GCesquire/Project-2#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.16.1",
+    "handlebars": "^4.1.2",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.18.11",
+    "sequelize": "^5.7.4",
+    "sequelize-cli": "^5.4.0"
+  }
+}

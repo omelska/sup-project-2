@@ -1,0 +1,17 @@
+<div class="left">
+    {{#each reports }}
+    <p class="left">Order number: {{id}} </p>
+    {{!-- <p>Total expenses: ${{expenses}} </p> --}}
+    <p>Total sales: $ {{sales}} </p>
+
+
+    {{/each}}
+</div>
+
+<div class="right">
+    <a href="/print">
+        <button class="btn btn-info center ">Print the report</button>
+    </a>
+</div>
+
+<script src="./js/sales-report.js"></script>
