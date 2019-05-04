@@ -1,20 +1,28 @@
-<h2>Add tables to your restaurant</h2>
-
-<form>
-    <lable>
-        Enter table number
-    </lable>
-    <input type="numbers" class="table-input" id="tableNumber">
-    <lable>
-        Enter guest quantity
-    </lable>
-    <input type="number" class="guest-count" id="guestQty">
-
-</form>
-
-<a href="/add-tables"><button type="submit" id="save" class="btn btn-info">Save and continue</button></a>
-<a href="/tables"><button type="submit" id="finish" class="btn btn-info">Finish</button></a>
-<a href="/api/tables">Table API</a>
+<div class="tableContainer">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Add Table</h1>
+    <form>
+        <h3><lable>
+            Enter Table Number
+        </lable></h3>
+        <input type="numbers" placeholder="Table Number" class="table-input" id="tableNumber">
+        <h3><lable>
+            Enter Guest Quantity
+        </lable></h3>
+        <input type="number" placeholder="Guest Quantity" class="guest-count" id="guestQty">
+    </form>
+<br>
+<a href="/add-tables"><button type="submit" id="save" class="btn btn-outline-light waves-effect btn-lg">Save And Continue</button></a>
+<a href="/tables"><button type="submit" id="finish" class="btn btn-outline-light waves-effect btn-lg">Finish</button></a>
+<h3><a href="/api/tables">Table API</a></h3>
+</div>
 <!--jQuery-->
 <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
     crossorigin="anonymous"></script>

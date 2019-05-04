@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Restaurant POS</title>
+    <title>Sup</title>
     <!--Bootstrap link-->
     <link
       rel="stylesheet"
@@ -13,21 +13,22 @@
       crossorigin="anonymous"
     />
     <!--link to Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Karla|Kirang+Haerang"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
     <!--CSS link-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+  <style>
+    body {background-image: url("https://dfrg.com/wp-content/uploads/2018/12/About-us-HomePage.jpg");}
+    body {font-size: 40px;}
+  </style>
   <body>
-    <h1>Welcomo to Restaurant POS</h1>
+    <h1 style="color: white; font-size:60px;">Welcome To Sup</h1>
     <div class="top-margin">
       <p>New to the program or existing user?</p>
-      <button class="btn btn-info" data-toggle="modal" data-target="#logIn">
+      <button type="button" class="btn btn-outline-light waves-effect btn-lg" data-toggle="modal" data-target="#logIn">
         Login
       </button>
-      <button class="btn btn-info" data-toggle="modal" data-target="#signIn">
+      <button type="button" class="btn btn-outline-light waves-effect btn-lg" data-toggle="modal" data-target="#signIn">
         Sign in
       </button>
     </div>
@@ -73,12 +74,12 @@
           </div>
           <div class="modal-footer">
             <a id="linkToRestaurant">
-              <button type="submit" class="btn btn-info" id="submit">
+              <button type="submit" class="btn btn-outline-light waves-effect btn-lg" id="submit">
                 Sumbit
               </button>
             </a>
 
-            <button type="button" class="btn btn-dark" data-dismiss="modal">
+            <button type="button" class="btn btn-outline-light waves-effect btn-lg" data-dismiss="modal">
               Cancel
             </button>
           </div>
@@ -141,7 +142,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-info"
+              class="btn btn-outline-light waves-effect btn-lg"
               id="create"
               data-toggle="modal"
               data-target="#created"
@@ -149,7 +150,7 @@
             >
               Create account
             </button>
-            <button type="button" class="btn btn-dark" data-dismiss="modal">
+            <button type="button" class="btn btn-outline-light waves-effect btn-lg" data-dismiss="modal">
               Cancel
             </button>
           </div>
@@ -184,7 +185,7 @@
 
           <div class="modal-footer">
             <a href="/">
-              <button type="submit" class="btn btn-info" id="submit">
+              <button type="submit" class="btn btn-outline-light waves-effect btn-lg" id="submit">
                 ok
               </button>
             </a>
@@ -199,6 +200,7 @@
       integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
       crossorigin="anonymous"
     ></script>
+    
     <!--Bootstrap link-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

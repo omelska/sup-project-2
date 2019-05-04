@@ -1,8 +1,15 @@
-<h1>Add Drinks</h1>
+<div class="drinkContainer">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<h1>Add Drink</h1>
 
 <form action="/action_page.php">
     <label>
-        <h2>Choose A Category:</h2>
+        <h2>Choose A Category</h2>
     </label>
     <div>
         <select>
@@ -13,33 +20,31 @@
         </select>
     </div>
     <label>
-        <h2>Enter The Name of the drink:</h2>
+        <h2>Enter The Name Of The Drink</h2>
     </label>
     <div>
-        <input type="text" placeholder="Name Of Drink" id="name">
+        <input type="text" placeholder="Drink Name" id="name">
     </div>
     <label>
-        <h2>Enter The Whoelsale Price:</h2>
+        <h2>Enter The Whoelsale Price</h2>
     </label>
     <div>
         <input type="text" placeholder="Wholesale Price" id="wholesalePrice">
     </div>
     <label>
-        <h2>Enter The Retail Price:</h2>
+        <h2>Enter The Retail Price</h2>
     </label>
     <div>
         <input type="text" placeholder="Retail Price" id="retailPrice">
     </div>
 </form>
 
+<br>
+<a href="/drinks"><button type="submit" class="btn btn-outline-light waves-effect btn-lg" id="add">Add And Continue</button></a>
+<a href="/drink-menu"><button type="submit" class="btn btn-outline-light waves-effect btn-lg" id="submit">Finish</button></a>
+
+<h3><a href="/api/drinks">Drinks API</a></h3>
 </div>
-
-<a href="/drinks"><button type="submit" class="btn btn-info" id="add">Add And Continue</button></a>
-<a href="/drink-menu"><button type="submit" class="btn btn-info" id="submit">Finish</button></a>
-
-<a href="/api/drinks">Drinks API</a>
-
-
 
 <!--jQuery-->
 <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
