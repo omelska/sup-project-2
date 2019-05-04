@@ -31,14 +31,14 @@ body {
 .table-list {
     height: 70vh;
     overflow: hidden;
-    background: #ece8e8;
+    background: dimgray;
     overflow-y: scroll;
 }
 
 .menu-list {
     height: 70vh;
     overflow: hidden;
-    background: #cbf43b;
+    background: darkgray;
 }
 
 .right-price {
@@ -70,14 +70,14 @@ body {
     margin: auto;
     padding-top: 33px;
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 .tables:hover {
     background: url("../images/square-table-hover.png");
     background-size: cover;
     text-decoration: none;
-    color: #fff;
+    color: white;
 }
 
 .cursor {
@@ -127,7 +127,7 @@ body {
 }
 
 .systemContainer{
-        background-image: url("http://www.eldoradostone.com/wp-content/uploads/2018/05/ES_RomaBrick_Bracciano_Int_Restaurant_PC-Empress-Tavern_1-1500x900.jpg");
+        background-image: url("../images/system.jpg");
         /* Set rules to fill background */
         min-height: 100%;
         min-width: 1024px;
@@ -141,7 +141,7 @@ body {
 }
 
 .tableContainer{
-    background-image: url("http://tattu.co.uk/app/uploads/Parlour-Tables-1500x900.jpg");
+    background-image: url("../images/tables.jpg");
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 100%;
@@ -155,7 +155,7 @@ body {
 }
 
 .menuContainer{
-    background-image: url("https://i1.wp.com/www.westside.social/wp-content/uploads/2017/12/food-background-food-concept-with-various-tasty-fresh-ingredients-for-cooking-italian-food-ingredients-view-from-above-with-copy-space_1220-1491-2-e1513108150131.jpg?ssl=1");
+    background-image: url("../images/menu.jpg");
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 100%;
@@ -169,7 +169,7 @@ body {
 }
 
 .categoryContainer{
-    background-image: url("https://static1.squarespace.com/static/55ef51bee4b09022d245a232/t/573cef337da24f0c09152cad/1463611199591/Empanada+Mid-Party+Full+Menu+Cropped.jpg?format=2500w");
+    background-image: url("../images/categories.jpg");
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 100%;
@@ -184,7 +184,7 @@ body {
 
 
 .foodContainer{
-    background-image: url("https://d1725r39asqzt3.cloudfront.net/94fc12f7-8605-4022-b498-40a988a29563/orig.jpg");
+    background-image: url("../images/foods.jpg");
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 100%;
@@ -198,7 +198,7 @@ body {
 }
 
 .drinkContainer{
-    background-image: url("https://images.musement.com/cover/0001/35/thumb_34244_cover_header.jpeg");
+    background-image: url("../images/drinks.jpeg");
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 100%;
@@ -212,7 +212,7 @@ body {
 }
 
 .employeeContainer{
-        background-image: url("https://static1.squarespace.com/static/59b93549f14aa11bc99afbc4/t/5a21c4af652dea21c5a7fbfe/1512162485748/paulll.jpg?format=1500w");
+        background-image: url("../images/employees.jpg");
         /* Set rules to fill background */
         min-height: 100%;
         min-width: 100%;
