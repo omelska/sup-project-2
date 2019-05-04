@@ -21,7 +21,7 @@ const configJson = {
     dialect: "mysql"
   }
 };
-const config = configJson[env];
+// const config = configJson[env];
 
 let sequelize;
 if (config.use_env_variable) {
