@@ -13,7 +13,8 @@ const configJson = {
     username: "root",
     password: "",
     database: "restaurant_db",
-    host: "127.0.0.1",
+    host: "localhost",
+    port: "3306",
     dialect: "mysql"
   },
   production: {
@@ -25,7 +26,7 @@ const config = configJson[env];
 
 let sequelize;
 if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
   sequelize = new Sequelize(
     config.database,

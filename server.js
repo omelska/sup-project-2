@@ -34,8 +34,8 @@ app.use(express.static("public"));
 app.use("/", htmlRoutes);
 app.use("/api", apiRoutes);
 
-db.sequelize.sync({ force: true });
-
-app.listen(PORT, () => {
-  console.log(`Server listening on: http://localhost:${PORT}`);
+db.sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server listening on: http://localhost:${PORT}`);
+  });
 });
