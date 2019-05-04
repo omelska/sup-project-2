@@ -2,16 +2,25 @@
     {{#each reports }}
     <p class="left">Order Number: {{id}} </p>
     {{!-- <p>Total expenses: ${{expenses}} </p> --}}
-    <p>Total Sales: $ {{sales}} </p>
-
+    <p class="sales" value="{{sales}}">Total Sales: $ {{sales}} </p>
 
     {{/each}}
 </div>
 
 <div class="right">
+    <p>Total for the <span id="date"> </span> is $<span id="total"> </span>
+
+    </p>
     <a href="/print">
         <button class="btn btn-outline-light waves-effect btn-lg center ">Print Report</button>
     </a>
+
 </div>
 
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+
+<!--JavaScript-->
 <script src="./js/sales-report.js"></script>
